@@ -5,9 +5,38 @@
  Author:       Group 6 of storyscaping
  Author URI:   
  Template:     astra
- Version:      1.0.0
+ Version:      1.0.1
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         
  Text Domain:  astrachild
-*/
+*/ 
+
+
+/*Added our chosen font to customize website*/ 
+
+@font-face { 
+font-family: CirceRounded300; 
+src: url(http://localhost/github/storyscaping/wp-content/themes/astrachild/fonts/CirceRounded-Regular5.otf); 
+font-weight: normal; 
+}
+
+@font-face { 
+font-family: CirceRounded100; 
+src: url(http://localhost/github/storyscaping/wp-content/themes/astrachild/fonts/CirceRounded-ExtraLight.otf); 
+font-weight: normal; 
+}
+
+@font-face { 
+font-family: CirceRounded500; 
+src: url(http://localhost/github/storyscaping/wp-content/themes/astrachild/fonts/CirceRounded_Regular.otf); 
+font-weight: normal; 
+}
+
+
+/* Used custom font for the menu items*/ 
+a.menu-link {
+font-family: "CirceRounded500", Arial, sans-serif; 
+font-size: 17px; 
+font-weight: 500;
+}
