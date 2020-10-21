@@ -2,4 +2,4 @@
 // Silence is golden.
 //hi guys it's a comment you should change in the index.php file
 //Hello there gergo
-// Ok, finally works
+// Hi, my name is Viri
