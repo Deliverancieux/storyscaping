@@ -1,11 +1,11 @@
 <?php
 /*
-* Plugin Name: Partyvibes Plugin 
-* Plugin URI: http://localhost/learningwordpress/cheers
-* Description: This is a Newsletter Signup form Plugin for Cheers based on HTML5, CSS, JS and PHP
-* Version: 2.9.9
-* Author: Murat Kilic
-* Author URI: http://localhost/learningwordpress/cheers
+* Plugin Name: Newsletter Plugin 
+* Plugin URI: http://localhost/storyscaping/newsletterplugin
+* Description: This is a Newsletter Signup form Plugin for ReGrow based on HTML5, CSS, JS and PHP
+* Version: 1.1.0
+* Author: Group 6
+* Author URI: http://localhost/storyscaping
 * License: GPL2
 */
 
@@ -44,7 +44,6 @@ function newsletter_form()
     {
         wp_enqueue_style('fontAwesomCDN', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css');
         
-        wp_enqueue_style('CustomFontMontserrat','https://fonts.googleapis.com/css?family=Montserrat:400,500,800&display=swap');
         
         wp_enqueue_style('CustomStylesheet', plugins_url('newsletterplugin/css/style.css'));
         
