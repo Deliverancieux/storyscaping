@@ -15,7 +15,7 @@ function catalogue_form()
     $content .= '<div class="login-form">';
     $content .= '<div class="popupCloseButton">X</div>';
   	$content .= '<section>';
-    $content .= '<img id="logo" src=" '.plugins_url("newsletterplugin/img/logo.svg").' " ';
+    $content .= '<img id="logo" src=" '.plugins_url("catalogueplugin/img/logo.svg").' " ';
     $content .= 'alt="ReGrow Logo">';
   	$content .= '<h5 id="tilmeld">For mor information, please download our catalogue. Together we can make a difference.</h5>';
   	$content .= '</section>';
