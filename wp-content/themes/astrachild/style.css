@@ -77,3 +77,19 @@ a.menu-link {
      margin-bottom: 0px;
      cursor: pointer;
 }
+
+/*Virag  code*/
+/* Adding menu item hover color */ 
+a.menu-link:hover {
+    color: black !important; 
+}
+
+/* Made menu bar fixed */ 
+.main-header-bar-wrap {
+    position: fixed; 
+    width: 100%; 
+}
+/* Deleted top margin from the menu bar */  
+.main-header-bar {
+    margin-top: 0px; 
+}
