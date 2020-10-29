@@ -1,0 +1,343 @@
+/*
+ Theme Name:   AstraChild
+ Theme URI:    
+ Description:  Astra Child Theme
+ Author:       Group 6 of storyscaping
+ Author URI:   
+ Template:     astra
+ Version:      1.1.7
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         
+ Text Domain:  astrachild
+*/
+
+
+/*Added our chosen font to customize website*/
+
+@font-face {
+     font-family: CirceRounded300;
+     src: url(https://storyscaping.dees.design/wp-content/themes/astrachild/fonts/CirceRounded-Regular5.otf);
+     font-weight: normal;
+}
+
+@font-face {
+     font-family: CirceRounded100;
+     src: url(https://storyscaping.dees.design/wp-content/themes/astrachild/fonts/CirceRounded-ExtraLight.otf);
+     font-weight: normal;
+}
+
+@font-face {
+     font-family: CirceRounded500;
+     src: url(https://storyscaping.dees.design/wp-content/themes/astrachild/fonts/CirceRounded_Regular.otf);
+     font-weight: normal;
+}
+
+/* Used custom font for the menu items*/
+.ast-theme-transparent-header .main-header-menu, .ast-theme-transparent-header .main-header-menu .menu-link, .ast-theme-transparent-header .ast-masthead-custom-menu-items, .ast-theme-transparent-header .ast-masthead-custom-menu-items a, .ast-theme-transparent-header .main-header-menu .menu-item > .ast-menu-toggle, .ast-theme-transparent-header .main-header-menu .menu-item > .ast-menu-toggle{
+     font-family: "CirceRounded500", Arial, sans-serif;
+     font-size: 15px;
+     font-weight: 500;
+     color: black;
+     padding-top: 3px; 
+}
+
+/* Added growing green underline */
+.menu-link {
+     padding: 0px 0;
+     transition: 0.5s;
+}
+
+.menu-link::after {
+     position: absolute;
+     content: "";
+     width: 100%;
+     height: 2px;
+     top: 80%;
+     left: 0;
+     background: #899D50;
+     transition: transform 0.5s;
+     transform: scaleX(0);
+     transform-origin: center;
+}
+
+.menu-link:hover::after {
+     transform: scaleX(1);
+     transform-origin: center;
+}
+
+/* Made menu bar fixed */ 
+.main-header-bar-wrap {
+position: fixed; 
+width: 100%;
+background-color: white;
+border-bottom-width: 1px;
+border-bottom-color: #eaeaea;
+border-bottom-style: solid;
+}
+
+/* Changed design of active menu item */
+.ast-theme-transparent-header .main-header-menu .menu-item:hover > .menu-link, .ast-theme-transparent-header .main-header-menu .menu-item:hover > .ast-menu-toggle, .ast-theme-transparent-header .main-header-menu .ast-masthead-custom-menu-items a:hover, .ast-theme-transparent-header .main-header-menu .focus > .menu-link, .ast-theme-transparent-header .main-header-menu .focus > .ast-menu-toggle, .ast-theme-transparent-header .main-header-menu .current-menu-item > .menu-link, .ast-theme-transparent-header .main-header-menu .current-menu-ancestor > .menu-link, .ast-theme-transparent-header .main-header-menu .current-menu-item > .ast-menu-toggle, .ast-theme-transparent-header .main-header-menu .current-menu-ancestor > .ast-menu-toggle {
+     color: #899D50;
+     font-weight: 500;
+}
+
+
+/* Adding menu item hover color */ 
+a.menu-link:hover {
+    color: black !important; 
+}
+
+/* Deleted top margin from the menu bar */  
+.main-header-bar {
+ margin-top: 0px; 
+}
+
+/* Customizing buttons */
+a.elementor-button-link.elementor-button.elementor-size-sm {
+background-color: #899D50;
+color: white;
+font-family: Lato, Arial, sans-serif;
+border: none; 
+box-shadow: 2px 3px 3px #888888;
+transition: all 0.3s ease 0s;
+border-radius: 2px;
+}
+
+a.elementor-button-link.elementor-button.elementor-size-sm:hover {
+background-color: #46454A; 
+transform: translateY(-7px);
+}
+
+/* Making custom headlines */ 
+h2.elementor-heading-title.elementor-size-default {
+font-family: "CirceRounded500", Arial, sans-serif;
+text-transform: uppercase; 
+}
+
+/* Hide 3 paragraphs made with jquerry to expand them on click in ENVIRONMENT page, also customized them */ 
+#panel_one, #flip_one {
+  padding: 5px;
+  text-align: left;
+  font-family: "CirceRounded500", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #46454A;
+  cursor: pointer;
+}
+
+#panel_one {
+  display: none;
+  font-weight: 300;
+  font-family: Arial, sans-serif;
+  font-size: 17px; 
+}
+
+#panel_two, #flip_two {
+  padding: 5px;
+  text-align: left;
+  font-family: "CirceRounded500", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #46454A;
+  cursor: pointer;
+}
+
+#panel_two {
+  display: none;
+  font-weight: 300;
+  font-family: Arial, sans-serif;
+  font-size: 17px; 
+}
+
+#panel_three, #flip_three {
+  padding: 5px;
+  text-align: left;
+  font-family: "CirceRounded500", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #46454A;
+  cursor: pointer;
+}
+
+#panel_three {
+  display: none;
+  font-weight: 300;
+  font-family: Arial, sans-serif;
+  font-size: 17px; 
+} 
+
+
+/* For some reason menu in BLOG acted different so we needed add below code */ 
+a.menu-link {
+     font-family: "CirceRounded500", Arial, sans-serif;
+     font-size: 15px;
+     font-weight: 500;
+     color: black;
+} 
+
+
+
+/* Added animation with keyframes from Animista */ 
+
+.team_pic {
+	-webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-10-27 20:10:49
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+/* Added animation with keyframes by following animista rule */ 
+.potpot {
+ animation: slide-bottom  2s;
+ }
+
+@keyframes slide-bottom {
+  0% {-webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {-webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+/* Customized Instagram widget button to fit other buttons */ 
+.eapps-instagram-feed-posts-grid-load-more-text.eapps-instagram-feed-posts-grid-load-more-text-visible {
+background-color: #899D50;
+color: white;
+font-family: Lato, Arial, sans-serif;
+border: none; 
+box-shadow: 2px 3px 3px #888888;
+transition: all 0.3s ease 0s;
+border-radius: 2px;
+}
+
+.eapps-instagram-feed-posts-grid-load-more-text.eapps-instagram-feed-posts-grid-load-more-text-visible:hover {
+background-color: #46454A; 
+transform: translateY(-7px);
+}
+
+/* Elementor didn't want cooperate so we added margins in beetween articles here */ 
+.ast-separate-container .ast-article-post, .ast-separate-container .ast-article-single {
+    margin-top: 50px;
+    padding: 3.34em 2.4em;
+}
+
+
+
+/* Added growing green underline for read more buttons on ENVIRONMENT page*/
+#flip_one {
+     padding: 0px 0;
+     transition: 0.5s;
+}
+
+#flip_one::after {
+     position: absolute;
+     content: "";
+     width: 20%;
+     height: 2px;
+     top: 100%;
+     left: 0;
+     background: #899D50;
+     transition: transform 0.5s;
+     transform: scaleX(0);
+     transform-origin: left;
+}
+
+#flip_one:hover::after {
+     transform: scaleX(1);
+     transform-origin: left;
+}
+
+#flip_two {
+     padding: 0px 0;
+     transition: 0.5s;
+}
+
+#flip_two::after {
+     position: absolute;
+     content: "";
+     width: 20%;
+     height: 2px;
+     top: 100%;
+     left: 0;
+     background: #899D50;
+     transition: transform 0.5s;
+     transform: scaleX(0);
+     transform-origin: left;
+}
+
+#flip_two:hover::after {
+     transform: scaleX(1);
+     transform-origin: left;
+}
+
+#flip_three {
+     padding: 0px 0;
+     transition: 0.5s;
+}
+
+#flip_three::after {
+     position: absolute;
+     content: "";
+     width: 20%;
+     height: 2px;
+     top: 100%;
+     left: 0;
+     background: #899D50;
+     transition: transform 0.5s;
+     transform: scaleX(0);
+     transform-origin: left;
+}
+
+#flip_three:hover::after {
+     transform: scaleX(1);
+     transform-origin: left;
+}
+
+
+
+
+
+
