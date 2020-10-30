@@ -9,7 +9,7 @@ This is the repository of the 3rd semester Storyscaping exam project, BAAA 2020,
 > It uses the shortcode [show_catalogue] and with that code inserted to a site, the catalogue will automatically pop up on that page with a fixed position.
 > It is made using php, css and javascript.
 > Here is a screenshot of how the plugin looks like on the website.
-> ![catalogue-plugin, Catalogue Plugin](/images/catalogue-plugin-screeenshot.png)
+> ![catalogue-plugin, Catalogue Plugin](/catalogue-plugin-screeenshot.png)
 
 
 > ## Custom Astra Child theme
